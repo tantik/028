@@ -89,9 +89,11 @@ input, select {
 /* layout parts */
 /* header */
 #header {
-  height: 166px;
+  height: 225px;
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  margin-bottom: -59px;
+  background: url("../images/bg-bot-header.png") no-repeat 0 100%; }
   #header .holder {
     position: relative;
     height: 166px; }
@@ -111,7 +113,7 @@ input, select {
   #header .phone-link {
     position: absolute;
     top: 22px;
-    right: 0;
+    right: 2px;
     width: 320px;
     height: 46px;
     background: url("../images/bg-phone-header.png") no-repeat; }
@@ -119,20 +121,22 @@ input, select {
       display: block;
       text-align: center;
       font-size: 25px;
-      line-height: 46px; }
+      line-height: 46px;
+      padding-left: 17px; }
       #header .phone-link a span {
         display: inline-block;
         vertical-align: top;
-        padding-left: 40px;
-        background: url("../images/icon-phone.png") no-repeat 0 50%; }
+        padding-left: 32px;
+        background: url("../images/icon-phone.png") no-repeat 0 50%;
+        letter-spacing: 4px; }
   #header .left-nav {
-    margin: 100px 0 0 20px;
+    margin: 103px 0 0 20px;
     float: left; }
     #header .left-nav li {
       margin-right: 60px;
       float: left; }
   #header .right-nav {
-    margin: 100px 20px 0 0;
+    margin: 103px 20px 0 0;
     float: right; }
     #header .right-nav li {
       margin-left: 60px;
@@ -145,7 +149,8 @@ input, select {
       display: block;
       font-size: 18px;
       line-height: 22px;
-      font-weight: normal; }
+      font-weight: normal;
+      margin-bottom: 6px; }
     #header .nav ul li a span {
       display: block;
       font-size: 12px;
@@ -157,3 +162,94 @@ input, select {
 #wrapper {
   position: relative;
   overflow: hidden; }
+
+/* promo block */
+.promo {
+  background: url("../images/bg-promo.jpg") no-repeat 50% 0;
+  background-size: cover;
+  overflow: hidden; }
+  .promo .holder {
+    position: relative;
+    padding-top: 1037px; }
+    .promo .holder h2 {
+      position: absolute;
+      top: 120px;
+      right: 0;
+      width: 488px;
+      font-size: 32px;
+      line-height: 2;
+      font-weight: normal;
+      color: #78684a;
+      letter-spacing: 5px; }
+    .promo .holder .mother-image {
+      position: absolute;
+      top: 69px;
+      left: -60px;
+      width: 60.757%; }
+      .promo .holder .mother-image img {
+        display: block;
+        width: 100%; }
+    .promo .holder .child-image {
+      position: absolute;
+      top: 651px;
+      left: 50%;
+      margin-left: -139px;
+      width: 248px; }
+      .promo .holder .child-image img {
+        display: block;
+        width: 100%; }
+    .promo .holder .center-image {
+      position: absolute;
+      top: 285px;
+      right: -21px;
+      width: 43.86%; }
+      .promo .holder .center-image img {
+        display: block;
+        width: 100%; }
+    .promo .holder .text-box {
+      margin: 0 auto 100px;
+      width: 740px;
+      text-align: center; }
+      .promo .holder .text-box h3 {
+        margin-bottom: 30px;
+        font-size: 32px;
+        line-height: 2;
+        font-weight: normal;
+        letter-spacing: 7px; }
+        .promo .holder .text-box h3 span {
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 122px;
+          background: url("../images/icon-flower-left.png") no-repeat;
+          position: relative; }
+          .promo .holder .text-box h3 span:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 92px;
+            height: 48px;
+            background: url("../images/icon-flower-right.png") no-repeat; }
+      .promo .holder .text-box p {
+        line-height: 35px;
+        letter-spacing: 5px; }
+        .promo .holder .text-box p span {
+          display: block; }
+
+/* right fixed links */
+.right-fixed-links {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  margin-top: -239px; }
+  .right-fixed-links a {
+    display: block;
+    width: 84px;
+    height: 232px;
+    text-indent: -9999px;
+    overflow: hidden; }
+    .right-fixed-links a.time {
+      background: url("../images/bg-link-time.png") no-repeat;
+      margin-bottom: 14px; }
+    .right-fixed-links a.access {
+      background: url("../images/bg-link-access.png") no-repeat; }

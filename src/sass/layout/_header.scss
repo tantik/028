@@ -1,8 +1,10 @@
 /* header */
 #header {
-	height: 166px;
+	height: 225px;
 	position: relative;
 	z-index: 100;
+	margin-bottom: -59px;
+	background: url('../images/bg-bot-header.png') no-repeat 0 100%;
 	.holder{
 		position: relative;
 		height: 166px;
@@ -25,7 +27,7 @@
 	.phone-link{
 		position: absolute;
 		top: 22px;
-		right: 0;
+		right: 2px;
 		width: 320px;
 		height: 46px;
 		background: url('../images/bg-phone-header.png') no-repeat;
@@ -34,16 +36,18 @@
 			text-align: center;
 			font-size: 25px;
 			line-height: 46px;
+			padding-left: 17px;
 			span{
 				display: inline-block;
 				vertical-align: top;
-				padding-left: 40px;
+				padding-left: 32px;
 				background: url('../images/icon-phone.png') no-repeat 0 50%;
+				letter-spacing: 4px;
 			}
 		}
 	}
 	.left-nav{
-		margin: 100px 0 0 20px;
+		margin: 103px 0 0 20px;
 		float: left;
 		li{
 			margin-right: 60px;
@@ -51,7 +55,7 @@
 		}
 	}
 	.right-nav{
-		margin: 100px 20px 0 0;
+		margin: 103px 20px 0 0;
 		float: right;
 		li{
 			margin-left: 60px;
@@ -70,6 +74,7 @@
 						font-size: 18px;
 						line-height: 22px;
 						font-weight: normal;
+						margin-bottom: 6px;
 					}
 					span{
 						display: block;
