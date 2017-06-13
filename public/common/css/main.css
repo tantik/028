@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* utils */
+/* base */
+/* reset css */
+* {
+  -webkit-text-size-adjust: none; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+html {
+  height: 100%;
+  background: #fff;
+  -webkit-text-size-adjust: none; }
+
+body {
+  min-height: 100%;
+  font-family: "Hiragino Sans GB W3", "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+  position: relative;
+  background: #fff;
+  color: #706145;
+  font-size: 16px;
+  line-height: 1.875;
+  min-width: 320px; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+a {
+  color: #706145;
+  text-decoration: none;
+  cursor: pointer;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.4); }
+
+a:hover {
+  text-decoration: none; }
+
+a img {
+  vertical-align: top; }
+
+#main a:hover {
+  text-decoration: underline; }
+
+table {
+  border-collapse: collapse; }
+
+input, select {
+  vertical-align: middle; }
+
+.holder {
+  margin: 0 auto;
+  max-width: 1083px; }
+  .holder:after {
+    content: '';
+    display: block;
+    clear: both; }
+  @media only screen and (max-width: 1000px) {
+    .holder {
+      padding-left: 25px;
+      padding-right: 25px; } }
+
+.sp,
+.hidden {
+  display: none !important; }
+
+.pc {
+  display: block !important; }
+
+/* Smartphone */
+@media only screen and (max-width: 736px) {
+  .sp {
+    display: block !important; }
+  .pc {
+    display: none !important; } }
+
+/* layout parts */
+/* header */
+#header {
+  height: 166px;
+  position: relative;
+  z-index: 100; }
+  #header .holder {
+    position: relative;
+    height: 166px; }
+  #header .logo {
+    position: absolute;
+    top: 29px;
+    left: 50%;
+    margin-left: -106px;
+    width: 212px;
+    height: 175px;
+    text-indent: -9999px;
+    background: url("../images/logo-pc.png") no-repeat;
+    overflow: hidden; }
+    #header .logo a {
+      display: block;
+      height: 100%; }
+  #header .phone-link {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    width: 320px;
+    height: 46px;
+    background: url("../images/bg-phone-header.png") no-repeat; }
+    #header .phone-link a {
+      display: block;
+      text-align: center;
+      font-size: 25px;
+      line-height: 46px; }
+      #header .phone-link a span {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 40px;
+        background: url("../images/icon-phone.png") no-repeat 0 50%; }
+  #header .left-nav {
+    margin: 100px 0 0 20px;
+    float: left; }
+    #header .left-nav li {
+      margin-right: 60px;
+      float: left; }
+  #header .right-nav {
+    margin: 100px 20px 0 0;
+    float: right; }
+    #header .right-nav li {
+      margin-left: 60px;
+      float: left; }
+  #header .nav ul li a {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; }
+    #header .nav ul li a strong {
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: normal; }
+    #header .nav ul li a span {
+      display: block;
+      font-size: 12px;
+      line-height: 16px;
+      color: #e2a843; }
+
+/* footer */
+/* styles */
+#wrapper {
+  position: relative;
+  overflow: hidden; }

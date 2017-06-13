@@ -1,23 +1,17 @@
 // Variables
 // Colors
-$gray: #222;
-$light-gray: #ccc;
-$bg-gray: #f5f5f5;
+$light-yellow: #fcf7e7;
 $black: #000;
 $white: #fff;
-$blue: #003a9e;
-$hover-color: #003a9e;
+$brown: #706145;
 
 // Body
-$base-font-size: 14px !default;
-$base-line-height: 2 !default;
-$base-text-color: $gray !default;
-$base-font-family: 'HiroKakuPro', Arial, Helvetica, sans-serif !default;
-$base-background-color: #f4f4f4 !default;
+$base-font-size: 16px !default;
+$base-line-height: 1.875 !default;
+$base-text-color: $brown !default;
+$base-font-family: 'Hiragino Sans GB W3', "游ゴシック体", "Yu Gothic", YuGothic, sans-serif !default;
+$base-background-color: $white !default;
 $base-min-width: 320px;
 
 // Links
-$base-link-color: $blue;
-
-// Borders
-$border-color: $light-gray;
+$base-link-color: $brown;
