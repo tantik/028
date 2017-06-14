@@ -93,7 +93,7 @@ input, select {
   position: relative;
   z-index: 100;
   margin-bottom: -59px;
-  background: url("../images/bg-bot-header.png") no-repeat 0 100%; }
+  background: url("../images/bg-bot-header.png") no-repeat 50% 100%; }
   #header .holder {
     position: relative;
     height: 166px; }
@@ -165,6 +165,7 @@ input, select {
 
 /* promo block */
 .promo {
+  margin-bottom: 124px;
   background: url("../images/bg-promo.jpg") no-repeat 50% 0;
   background-size: cover;
   overflow: hidden; }
@@ -253,3 +254,47 @@ input, select {
       margin-bottom: 14px; }
     .right-fixed-links a.access {
       background: url("../images/bg-link-access.png") no-repeat; }
+
+/* intro links */
+.intro-block {
+  background: url("../images/bg-intro.jpg") no-repeat 0 50%;
+  background-size: 100% auto; }
+
+.intro-images {
+  margin-bottom: 50px;
+  overflow: hidden;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .intro-images li {
+    width: 27.7%;
+    margin-bottom: 20px; }
+    .intro-images li a {
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease; }
+      .intro-images li a strong {
+        display: block;
+        margin-bottom: 24px;
+        font-size: 27px;
+        line-height: 1.2;
+        font-weight: normal; }
+      .intro-images li a span {
+        display: block;
+        padding: 6px;
+        background: url("../images/bg-border-intro-images.jpg") no-repeat;
+        background-size: 100% 100%;
+        border-radius: 20px;
+        overflow: hidden; }
+        .intro-images li a span img {
+          display: block;
+          width: 100%;
+          border-radius: 14px;
+          overflow: hidden; }
+      .intro-images li a:hover {
+        text-decoration: none !important;
+        opacity: 0.7; }
