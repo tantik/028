@@ -49,14 +49,12 @@ input, select{vertical-align: middle;}
 .holder{
 	margin: 0 auto;
 	max-width: 1083px;
+	padding-left: 20px;
+	padding-right: 20px;
 	&:after{
 		content: '';
 		display: block;
 		clear: both;
-	}
-	@media only screen and (max-width: 1000px) {
-		padding-left: 25px;
-		padding-right: 25px;
 	}
 }
 .sp,
