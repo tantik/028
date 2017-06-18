@@ -142,7 +142,11 @@ input, select {
   #header .nav ul li a {
     display: inline-block;
     vertical-align: top;
-    text-align: center; }
+    text-align: center;
+    transition: opacity 0.5s ease; }
+    #header .nav ul li a:hover {
+      text-decoration: none !important;
+      opacity: 0.7; }
     #header .nav ul li a strong {
       display: block;
       font-size: 18px;
@@ -233,6 +237,9 @@ input, select {
               display: block;
               padding: 10px 0;
               color: #78684a; }
+              #header .nav-frame .left-nav li a:hover,
+              #header .nav-frame .right-nav li a:hover {
+                opacity: 1 !important; }
               #header .nav-frame .left-nav li a strong,
               #header .nav-frame .right-nav li a strong {
                 font-size: 14px;
@@ -1065,6 +1072,8 @@ input, select {
   background: url("../images/bg-page-title.jpg") no-repeat 50% 50%;
   background-size: cover;
   overflow: hidden; }
+  .page-title.service-title {
+    margin-bottom: 47px; }
   .page-title .title {
     background: url("../images/bg-bot-page-title.png") no-repeat 50% 100%; }
     .page-title .title .holder {
@@ -1097,6 +1106,8 @@ input, select {
           color: #e2a843;
           width: 100%; }
   @media only screen and (max-width: 1000px) {
+    .page-title.service-title {
+      margin-bottom: 40px; }
     .page-title .title .holder {
       height: 250px; }
       .page-title .title .holder .frame {
@@ -1108,6 +1119,8 @@ input, select {
   @media only screen and (max-width: 736px) {
     .page-title {
       margin-bottom: 50px; }
+      .page-title.service-title {
+        margin-bottom: 30px; }
       .page-title .title {
         background-size: 100% auto; }
         .page-title .title .holder {
@@ -1210,12 +1223,427 @@ input, select {
 
 /* anchor links */
 .anchor-links {
-  margin-bottom: 114px;
-  -display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: space-between li;
-      -ms-flex-pack: space-between li;
-          justify-content: space-between li;
-    justify-content-width: 14%; }
+  margin-bottom: 113px; }
+  .anchor-links .holder .links {
+    -display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .anchor-links .holder .links li {
+      width: 12.5%; }
+      .anchor-links .holder .links li a {
+        display: block;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: -1px;
+        color: #706145;
+        padding: 4px;
+        text-align: center;
+        border-radius: 14px;
+        background: url("../images/bg-anchor-links.jpg") no-repeat;
+        background-size: 100% 100%;
+        overflow: hidden;
+        transition: opacity 0.5s ease; }
+        .anchor-links .holder .links li a:hover {
+          text-decoration: none !important;
+          opacity: 0.7; }
+        .anchor-links .holder .links li a span {
+          -display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-box;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-align: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          height: 65px;
+          padding: 0 5px;
+          background: #fff;
+          border-radius: 10px; }
+  @media only screen and (max-width: 1100px) {
+    .anchor-links .holder .links li {
+      width: 13.5%; } }
+  @media only screen and (max-width: 1000px) {
+    .anchor-links {
+      margin-bottom: 80px; }
+      .anchor-links .holder .links li a {
+        font-size: 15px; } }
+  @media only screen and (max-width: 736px) {
+    .anchor-links {
+      margin-bottom: 50px; }
+      .anchor-links .holder .links {
+        margin-left: -10px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .anchor-links .holder .links li {
+          width: 25%;
+          padding: 0 5px 10px;
+          -ms-box-sizing: border-box;
+          box-sizing: border-box; }
+          .anchor-links .holder .links li a {
+            font-size: 14px;
+            line-height: 1.1; }
+            .anchor-links .holder .links li a span {
+              height: 50px; } }
+  @media only screen and (max-width: 480px) {
+    .anchor-links {
+      margin-bottom: 40px; }
+      .anchor-links .holder .links li {
+        width: 33.33%; }
+        .anchor-links .holder .links li a {
+          font-size: 13px; } }
+
+/* massage info */
+.massage-info {
+  margin-bottom: 120px;
+  overflow: hidden; }
+  .massage-info .holder .heading {
+    margin-bottom: 47px; }
+  .massage-info .holder .image-text {
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .massage-info .holder .image-text .image {
+      margin: 4px 0 0 9%;
+      width: 32.32%;
+      float: right; }
+      .massage-info .holder .image-text .image img {
+        display: block;
+        width: 100%; }
+    .massage-info .holder .image-text .text {
+      overflow: hidden;
+      letter-spacing: 2.9px; }
+  .massage-info p {
+    margin-bottom: 30px; }
+  @media only screen and (max-width: 1000px) {
+    .massage-info {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 100px; }
+      .massage-info p {
+        margin-bottom: 24px; }
+      .massage-info .holder .image-text .image {
+        margin-left: 4%; }
+      .massage-info .holder .image-text .text {
+        letter-spacing: 2px;
+        font-size: 14px;
+        line-height: 24px; }
+        .massage-info .holder .image-text .text p {
+          margin-bottom: 24px; } }
+  @media only screen and (max-width: 736px) {
+    .massage-info {
+      margin-bottom: 60px;
+      font-size: 12px;
+      line-height: 20px; }
+      .massage-info p {
+        margin-bottom: 20px; }
+      .massage-info .holder .heading {
+        margin-bottom: 25px; }
+      .massage-info .holder .image-text .image {
+        margin: 0 0 20px;
+        float: none;
+        width: 100%; }
+      .massage-info .holder .image-text .text {
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 20px; }
+        .massage-info .holder .image-text .text p {
+          margin-bottom: 20px; } }
+
+.heading {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: normal;
+  color: #78684a;
+  letter-spacing: 5px; }
+  .heading span {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 78px;
+    position: relative;
+    background: url("../images/icon3-flower-left.png") no-repeat 0 50%; }
+    .heading span:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 100%;
+      min-height: 36px;
+      background: url("../images/icon3-flower-right.png") no-repeat 100% 50%;
+      overflow: hidden; }
+  @media only screen and (max-width: 1000px) {
+    .heading {
+      margin-bottom: 40px;
+      font-size: 22px;
+      letter-spacing: 2px; } }
+  @media only screen and (max-width: 736px) {
+    .heading {
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 2; }
+      .heading span {
+        padding: 0 54px;
+        background-size: 36px 19px;
+        background-position: 0 50%; }
+        .heading span:after {
+          top: 50%;
+          margin-top: -10px;
+          width: 36px;
+          height: 19px;
+          min-height: 19px;
+          background-size: 36px 19px; } }
+
+.troubles-box {
+  margin: 0 auto 50px;
+  max-width: 900px;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff1ef;
+  border-radius: 15px;
+  padding: 29px 50px 34px 74px;
+  overflow: hidden; }
+  .troubles-box h3 {
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: #78684a; }
+  .troubles-box .list {
+    overflow: hidden; }
+    .troubles-box .list li {
+      width: 42%;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 -4px 6px 0;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-left: 22px;
+      position: relative;
+      letter-spacing: 5px; }
+      .troubles-box .list li:nth-child(odd) {
+        padding-right: 20px;
+        width: 58%; }
+      .troubles-box .list li:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        background: #706145;
+        border-radius: 8px; }
+  @media only screen and (max-width: 1000px) {
+    .troubles-box {
+      padding: 25px; }
+      .troubles-box h3 {
+        font-size: 20px;
+        letter-spacing: 3px; }
+      .troubles-box .list li {
+        width: 48%;
+        letter-spacing: 3px; }
+        .troubles-box .list li:nth-child(odd) {
+          padding-right: 15px;
+          width: 52%; } }
+  @media only screen and (max-width: 736px) {
+    .troubles-box {
+      margin-bottom: 40px; }
+      .troubles-box h3 {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 2px; }
+      .troubles-box .list li {
+        letter-spacing: 2px;
+        padding-left: 20px;
+        font-size: 14px;
+        line-height: 24px; }
+        .troubles-box .list li:after {
+          width: 10px;
+          height: 10px;
+          margin-top: -5px;
+          border-radius: 5px; } }
+  @media only screen and (max-width: 600px) {
+    .troubles-box {
+      margin-bottom: 30px; }
+      .troubles-box h3 {
+        margin-bottom: 20px;
+        font-size: 15px;
+        letter-spacing: 1px; }
+      .troubles-box .list li {
+        padding-right: 0 !important;
+        width: 100% !important;
+        letter-spacing: 1px;
+        margin: 0 0 5px !important;
+        padding-left: 16px;
+        font-size: 12px;
+        line-height: 20px; }
+        .troubles-box .list li:after {
+          width: 8px;
+          height: 8px;
+          margin-top: -4px;
+          border-radius: 4px; } }
+
+/* info boxes */
+.info-box {
+  margin-bottom: 110px;
+  overflow: hidden; }
+  .info-box.last {
+    margin-bottom: 95px; }
+  .info-box h2.heading {
+    margin-bottom: 48px; }
+    .info-box h2.heading span {
+      padding: 0 84px; }
+  .info-box .image-text {
+    overflow: hidden; }
+    .info-box .image-text .image {
+      margin: 10px 0 0 9%;
+      width: 32.32%;
+      float: right; }
+      .info-box .image-text .image img {
+        display: block;
+        width: 100%; }
+    .info-box .image-text .text-box {
+      letter-spacing: 3px;
+      overflow: hidden; }
+      .info-box .image-text .text-box p {
+        margin-bottom: 30px; }
+  @media only screen and (max-width: 1000px) {
+    .info-box {
+      margin-bottom: 90px; }
+      .info-box h2.heading {
+        margin-bottom: 40px; }
+      .info-box .image-text .image {
+        margin-left: 4%; } }
+  @media only screen and (max-width: 736px) {
+    .info-box {
+      margin-bottom: 40px; }
+      .info-box.last {
+        margin-bottom: 40px; }
+      .info-box h2.heading {
+        margin-bottom: 20px; }
+        .info-box h2.heading span {
+          padding: 0 54px; }
+      .info-box .image-text .image {
+        margin: 0 0 20px;
+        float: none;
+        width: 100%; }
+      .info-box .image-text .text-box {
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 20px; }
+        .info-box .image-text .text-box p {
+          margin-bottom: 20px; } }
+
+/* material box */
+.material-box {
+  margin-bottom: 130px;
+  overflow: hidden; }
+  .material-box .holder h2.heading {
+    margin-bottom: 57px; }
+    .material-box .holder h2.heading span {
+      padding: 0 84px; }
+  .material-box .holder h3 {
+    margin-bottom: 34px;
+    padding-left: 36px;
+    position: relative;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: 4px; }
+    .material-box .holder h3:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 6px;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      border-radius: 5px;
+      background: #aea492;
+      overflow: hidden; }
+  .material-box table.table {
+    margin-bottom: 76px; }
+    .material-box table.table tr th {
+      width: 27%; }
+    .material-box table.table tr td:last-child {
+      width: 46.8%;
+      text-align: left;
+      padding-left: 52px; }
+  @media only screen and (max-width: 1000px) {
+    .material-box {
+      margin-bottom: 80px; }
+      .material-box .holder h2.heading {
+        margin-bottom: 40px; }
+      .material-box .holder h3 {
+        margin-bottom: 30px;
+        font-size: 20px; }
+      .material-box table.table {
+        margin-bottom: 60px; }
+        .material-box table.table tr td:last-child {
+          padding-left: 30px; } }
+  @media only screen and (max-width: 736px) {
+    .material-box {
+      margin-bottom: 30px; }
+      .material-box .holder h2.heading {
+        margin-bottom: 30px; }
+      .material-box .holder h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+        padding-left: 20px; }
+        .material-box .holder h3:after {
+          left: 4px;
+          width: 8px;
+          height: 8px;
+          margin-top: -4px;
+          border-radius: 4px; }
+      .material-box .holder table.table {
+        margin-bottom: 35px; }
+        .material-box .holder table.table tr td:last-child {
+          padding-left: 5px; } }
+
+table.table {
+  width: 100%;
+  margin-bottom: 40px;
+  border-top: 1px solid #e2dacc; }
+  table.table tr th,
+  table.table tr td {
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px 20px 14px;
+    border-bottom: 1px solid #e2dacc;
+    border-right: 1px solid #e2dacc; }
+  table.table tr td:last-child {
+    border-right: 0; }
+  table.table tr th {
+    background: #fcf7ed; }
+  @media only screen and (max-width: 1000px) {
+    table.table tr th,
+    table.table tr td {
+      padding: 15px 15px 14px;
+      font-size: 14px;
+      line-height: 24px; } }
+  @media only screen and (max-width: 736px) {
+    table.table {
+      margin-bottom: 30px; }
+      table.table tr th,
+      table.table tr td {
+        padding: 10px 5px;
+        font-size: 12px;
+        line-height: 20px; } }
