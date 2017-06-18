@@ -183,6 +183,8 @@ input, select {
       background: url("../images/bg-header-sp.png") no-repeat 50% 0;
       background-size: 100% 78px;
       margin-bottom: -27px; }
+      #header .holder {
+        height: 78px; }
       #header .logo {
         top: 10px;
         width: 161px;
@@ -418,6 +420,20 @@ input, select {
   #footer .copyright {
     font-size: 9px;
     letter-spacing: 0.3px; } }
+
+.inner-page #footer {
+  padding-top: 197px;
+  background: url("../images/bg-footer-inner.jpg") no-repeat 50% 0;
+  background-size: 100% auto; }
+  @media only screen and (max-width: 1000px) {
+    .inner-page #footer {
+      padding-top: 160px; } }
+  @media only screen and (max-width: 736px) {
+    .inner-page #footer {
+      padding-top: 100px; } }
+  @media only screen and (max-width: 480px) {
+    .inner-page #footer {
+      padding-top: 70px; } }
 
 .schedule-box .time-row {
   margin-bottom: 11px; }
@@ -1042,3 +1058,152 @@ input, select {
           line-height: 40px;
           border-radius: 20px;
           padding: 0 23px; } }
+
+/* page title */
+.page-title {
+  margin-bottom: 60px;
+  background: url("../images/bg-page-title.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden; }
+  .page-title .title {
+    background: url("../images/bg-bot-page-title.png") no-repeat 50% 100%; }
+    .page-title .title .holder {
+      -display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      height: 256px; }
+      .page-title .title .holder .frame {
+        padding-top: 15px; }
+        .page-title .title .holder .frame h2 {
+          margin-bottom: 7px;
+          font-size: 32px;
+          line-height: 1.2;
+          font-weight: normal;
+          color: #78684a;
+          width: 100%;
+          letter-spacing: 7px; }
+        .page-title .title .holder .frame h3 {
+          font-size: 15px;
+          line-height: 1.2;
+          font-weight: normal;
+          color: #e2a843;
+          width: 100%; }
+  @media only screen and (max-width: 1000px) {
+    .page-title .title .holder {
+      height: 250px; }
+      .page-title .title .holder .frame {
+        padding-top: 10px; }
+        .page-title .title .holder .frame h2 {
+          font-size: 28px; }
+        .page-title .title .holder .frame h3 {
+          font-size: 14px; } }
+  @media only screen and (max-width: 736px) {
+    .page-title {
+      margin-bottom: 50px; }
+      .page-title .title {
+        background-size: 100% auto; }
+        .page-title .title .holder {
+          height: 140px; }
+          .page-title .title .holder .frame {
+            padding-top: 5px; }
+            .page-title .title .holder .frame h2 {
+              font-size: 18px;
+              margin-bottom: 5px; }
+            .page-title .title .holder .frame h3 {
+              font-size: 13px; } }
+  @media only screen and (max-width: 480px) {
+    .page-title {
+      margin-bottom: 30px; }
+      .page-title .title .holder {
+        height: 120px; }
+        .page-title .title .holder .frame {
+          padding-top: 10px; }
+          .page-title .title .holder .frame h2 {
+            font-size: 16px;
+            letter-spacing: 5px; }
+          .page-title .title .holder .frame h3 {
+            font-size: 12px; } }
+
+/* director block */
+.director-block {
+  margin-bottom: 62px;
+  overflow: hidden; }
+  .director-block .holder .images {
+    width: 50%;
+    margin-right: 45px;
+    float: left;
+    background: url("../images/bg-images-director.jpg") no-repeat 33.6% 100%; }
+    .director-block .holder .images img {
+      display: block;
+      width: 100%; }
+    .director-block .holder .images .img1 {
+      margin: 4px 0 15px 0.9%;
+      width: 92.5%; }
+    .director-block .holder .images .img2 {
+      margin-left: 6.8%;
+      width: 43.5%; }
+    .director-block .holder .images .img3 {
+      margin: -47px 0 33px 49.17%;
+      width: 32.596%; }
+  .director-block .holder .text-box {
+    overflow: hidden; }
+    .director-block .holder .text-box .box {
+      overflow: hidden;
+      letter-spacing: 3px; }
+      .director-block .holder .text-box .box h3 {
+        margin-bottom: 7px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: normal;
+        color: #78684a;
+        letter-spacing: 1px; }
+        .director-block .holder .text-box .box h3 span {
+          display: inline-block;
+          vertical-align: top;
+          padding: 0 18px;
+          background: #fdebec;
+          border-radius: 12px; }
+      .director-block .holder .text-box .box p {
+        margin-bottom: 30px; }
+  @media only screen and (max-width: 1000px) {
+    .director-block .holder .images {
+      margin-right: 20px; }
+      .director-block .holder .images .img3 {
+        margin-top: 0;
+        margin-bottom: 60px; }
+    .director-block .holder .text-box .box {
+      letter-spacing: 1px; } }
+  @media only screen and (max-width: 736px) {
+    .director-block {
+      margin-bottom: 30px; }
+      .director-block .holder .images {
+        width: 40%;
+        background-size: 35px 34px;
+        margin-bottom: 20px; }
+        .director-block .holder .images .img2 {
+          margin-bottom: 10px;
+          width: 60%; }
+        .director-block .holder .images .img3 {
+          width: 50%;
+          margin-left: 40%;
+          margin-bottom: 40px; }
+      .director-block .holder .text-box {
+        overflow: visible; }
+        .director-block .holder .text-box .box {
+          font-size: 12px;
+          line-height: 20px; }
+          .director-block .holder .text-box .box h3 {
+            font-size: 12px;
+            line-height: 20px; }
+            .director-block .holder .text-box .box h3 span {
+              border-radius: 10px; }
+          .director-block .holder .text-box .box p {
+            margin-bottom: 20px; } }

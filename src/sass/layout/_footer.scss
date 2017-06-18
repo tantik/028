@@ -124,6 +124,21 @@
 		}
 	}
 }
+.inner-page #footer{
+	padding-top: 197px;
+	background: url('../images/bg-footer-inner.jpg') no-repeat 50% 0;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	@media only screen and (max-width: 1000px) {
+		padding-top: 160px;
+	}
+	@media only screen and (max-width: 736px) {
+		padding-top: 100px;
+	}
+	@media only screen and (max-width: 480px) {
+		padding-top: 70px;
+	}
+}
 .schedule-box{
 	.time-row{
 		margin-bottom: 11px;
