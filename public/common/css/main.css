@@ -1237,7 +1237,7 @@ input, select {
       .anchor-links .holder .links li a {
         display: block;
         font-size: 17px;
-        line-height: 20px;
+        line-height: 25px;
         letter-spacing: -1px;
         color: #706145;
         padding: 4px;
@@ -1266,6 +1266,17 @@ input, select {
           padding: 0 5px;
           background: #fff;
           border-radius: 10px; }
+  .anchor-links.centered .holder .links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -11px;
+    margin-right: -11px; }
+    .anchor-links.centered .holder .links li {
+      padding: 0 11px;
+      width: 14.2%;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
   @media only screen and (max-width: 1100px) {
     .anchor-links .holder .links li {
       width: 13.5%; } }
@@ -1306,6 +1317,10 @@ input, select {
 .massage-info {
   margin-bottom: 120px;
   overflow: hidden; }
+  .massage-info.box2 {
+    margin-bottom: 75px; }
+  .massage-info.box3 {
+    margin-bottom: 108px; }
   .massage-info .holder .heading {
     margin-bottom: 47px; }
   .massage-info .holder .image-text {
@@ -1328,6 +1343,10 @@ input, select {
       font-size: 14px;
       line-height: 24px;
       margin-bottom: 100px; }
+      .massage-info.box2 {
+        margin-bottom: 60px; }
+      .massage-info.box3 {
+        margin-bottom: 80px; }
       .massage-info p {
         margin-bottom: 24px; }
       .massage-info .holder .image-text .image {
@@ -1343,6 +1362,10 @@ input, select {
       margin-bottom: 60px;
       font-size: 12px;
       line-height: 20px; }
+      .massage-info.box2 {
+        margin-bottom: 40px; }
+      .massage-info.box3 {
+        margin-bottom: 50px; }
       .massage-info p {
         margin-bottom: 20px; }
       .massage-info .holder .heading {
@@ -1411,91 +1434,107 @@ input, select {
   box-sizing: border-box;
   background: #fff1ef;
   border-radius: 15px;
-  padding: 29px 50px 34px 74px;
+  padding: 29px 50px 37px 74px;
   overflow: hidden; }
+  .troubles-box.box2 {
+    margin-bottom: 60px; }
   .troubles-box h3 {
-    margin-bottom: 32px;
+    margin-bottom: 29px;
     text-align: center;
     font-size: 22px;
     line-height: 1.2;
     font-weight: normal;
     letter-spacing: 5px;
     color: #78684a; }
-  .troubles-box .list {
+  .troubles-box .list-columns {
     overflow: hidden; }
-    .troubles-box .list li {
+    .troubles-box .list-columns ul {
       width: 42%;
-      display: inline-block;
-      vertical-align: top;
-      margin: 0 -4px 6px 0;
-      -ms-box-sizing: border-box;
-      box-sizing: border-box;
-      padding-left: 22px;
-      position: relative;
-      letter-spacing: 5px; }
-      .troubles-box .list li:nth-child(odd) {
-        padding-right: 20px;
+      float: right;
+      letter-spacing: 5px;
+      overflow: hidden; }
+      .troubles-box .list-columns ul:nth-child(odd) {
+        float: left;
         width: 58%; }
-      .troubles-box .list li:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 16px;
-        height: 16px;
-        margin-top: -8px;
-        background: #706145;
-        border-radius: 8px; }
+      .troubles-box .list-columns ul.wide {
+        width: 100% !important;
+        float: none !important; }
+      .troubles-box .list-columns ul li {
+        position: relative;
+        padding-left: 22px;
+        font-size: 18px;
+        line-height: 36px; }
+        .troubles-box .list-columns ul li:after {
+          content: '';
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 16px;
+          height: 16px;
+          background: #706145;
+          border-radius: 8px; }
+    .troubles-box .list-columns.info ul {
+      width: 58%; }
+      .troubles-box .list-columns.info ul:nth-child(odd) {
+        width: 40%; }
   @media only screen and (max-width: 1000px) {
     .troubles-box {
       padding: 25px; }
       .troubles-box h3 {
         font-size: 20px;
         letter-spacing: 3px; }
-      .troubles-box .list li {
-        width: 48%;
-        letter-spacing: 3px; }
-        .troubles-box .list li:nth-child(odd) {
-          padding-right: 15px;
-          width: 52%; } }
+      .troubles-box .list-columns ul {
+        width: 48%; }
+        .troubles-box .list-columns ul:nth-child(odd) {
+          width: 51%; }
+        .troubles-box .list-columns ul li {
+          letter-spacing: 3px;
+          font-size: 16px;
+          line-height: 32px; }
+          .troubles-box .list-columns ul li:after {
+            top: 8px; } }
   @media only screen and (max-width: 736px) {
     .troubles-box {
       margin-bottom: 40px; }
+      .troubles-box.box2 {
+        margin-bottom: 50px; }
       .troubles-box h3 {
         margin-bottom: 20px;
         font-size: 16px;
         line-height: 1.4;
         letter-spacing: 2px; }
-      .troubles-box .list li {
+      .troubles-box .list-columns ul li {
         letter-spacing: 2px;
         padding-left: 20px;
         font-size: 14px;
-        line-height: 24px; }
-        .troubles-box .list li:after {
+        line-height: 28px; }
+        .troubles-box .list-columns ul li:after {
           width: 10px;
           height: 10px;
-          margin-top: -5px;
+          top: 9px;
           border-radius: 5px; } }
   @media only screen and (max-width: 600px) {
     .troubles-box {
       margin-bottom: 30px; }
+      .troubles-box.box2 {
+        margin-bottom: 40px; }
       .troubles-box h3 {
         margin-bottom: 20px;
         font-size: 15px;
         letter-spacing: 1px; }
-      .troubles-box .list li {
-        padding-right: 0 !important;
+      .troubles-box .list-columns ul {
         width: 100% !important;
-        letter-spacing: 1px;
-        margin: 0 0 5px !important;
-        padding-left: 16px;
-        font-size: 12px;
-        line-height: 20px; }
-        .troubles-box .list li:after {
-          width: 8px;
-          height: 8px;
-          margin-top: -4px;
-          border-radius: 4px; } }
+        float: none; }
+        .troubles-box .list-columns ul li {
+          letter-spacing: 1px;
+          padding-left: 16px;
+          font-size: 12px;
+          line-height: 22px; }
+          .troubles-box .list-columns ul li:after {
+            width: 8px;
+            height: 8px;
+            top: 7px;
+            border-radius: 4px; } }
 
 /* info boxes */
 .info-box {
@@ -1647,3 +1686,63 @@ table.table {
         padding: 10px 5px;
         font-size: 12px;
         line-height: 20px; } }
+
+/* flow block */
+.flow-block {
+  margin: 0 auto 160px; }
+  .flow-block .holder h2.heading {
+    margin-bottom: 53px; }
+  .flow-block .holder .flow-holder {
+    margin: 0 auto;
+    max-width: 996px;
+    background: url("../images/bg-dots-vert.png") repeat-y 98px 0; }
+    .flow-block .holder .flow-holder .box {
+      margin-bottom: 45px;
+      overflow: hidden; }
+      .flow-block .holder .flow-holder .box:last-child {
+        margin-bottom: 0; }
+      .flow-block .holder .flow-holder .box.info-last {
+        margin-bottom: 10px; }
+      .flow-block .holder .flow-holder .box .date {
+        float: left;
+        margin-right: 67px;
+        width: 200px;
+        background: #b7f5ce;
+        font-size: 18px;
+        line-height: 45px;
+        text-align: center;
+        border-radius: 22px;
+        letter-spacing: 7px; }
+      .flow-block .holder .flow-holder .box .hold {
+        overflow: hidden;
+        padding-top: 7px; }
+        .flow-block .holder .flow-holder .box .hold .row {
+          margin-bottom: 36px;
+          overflow: hidden; }
+          .flow-block .holder .flow-holder .box .hold .row .ava {
+            width: 151px;
+            float: left; }
+            .flow-block .holder .flow-holder .box .hold .row .ava h3 {
+              font-size: 16px;
+              line-height: 30px;
+              font-weight: normal;
+              margin: 0 0 3px 5px; }
+            .flow-block .holder .flow-holder .box .hold .row .ava img {
+              vertical-align: top; }
+          .flow-block .holder .flow-holder .box .hold .row .info {
+            overflow: hidden; }
+            .flow-block .holder .flow-holder .box .hold .row .info ul.list li {
+              padding-left: 14px;
+              position: relative; }
+              .flow-block .holder .flow-holder .box .hold .row .info ul.list li:after {
+                content: '・';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 14px;
+                height: 30px; }
+
+/* about meals block */
+.about-meals {
+  margin-bottom: 109px;
+  overflow: hidden; }

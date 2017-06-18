@@ -902,7 +902,7 @@
 				a{
 					display: block;
 					font-size: 17px;
-					line-height: 20px;
+					line-height: 25px;
 					letter-spacing: -1px;
 					color: $brown;
 					padding: 4px;
@@ -931,6 +931,20 @@
 						-moz-border-radius: 10px;
 						border-radius: 10px;
 					}
+				}
+			}
+		}
+	}
+	&.centered{
+		.holder{
+			.links{
+				justify-content: center;
+				margin-left: -11px;
+				margin-right: -11px;
+				li{
+					padding: 0 11px;
+					width: 14.2%;
+					@include box-sizing;
 				}
 			}
 		}
@@ -996,6 +1010,12 @@
 .massage-info{
 	margin-bottom: 120px;
 	overflow: hidden;
+	&.box2{
+		margin-bottom: 75px;
+	}
+	&.box3{
+		margin-bottom: 108px;
+	}
 	.holder{
 		.heading{
 			margin-bottom: 47px;
@@ -1025,6 +1045,12 @@
 		font-size: 14px;
 		line-height: 24px;
 		margin-bottom: 100px;
+		&.box2{
+			margin-bottom: 60px;
+		}
+		&.box3{
+			margin-bottom: 80px;
+		}
 		p{
 			margin-bottom: 24px;
 		}
@@ -1048,6 +1074,12 @@
 		margin-bottom: 60px;
 		font-size: 12px;
 		line-height: 20px;
+		&.box2{
+			margin-bottom: 40px;
+		}
+		&.box3{
+			margin-bottom: 50px;
+		}
 		p{
 			margin-bottom: 20px;
 		}
@@ -1133,10 +1165,13 @@
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	padding: 29px 50px 34px 74px;
+	padding: 29px 50px 37px 74px;
 	overflow: hidden;
+	&.box2{
+		margin-bottom: 60px;
+	}
 	h3{
-		margin-bottom: 32px;
+		margin-bottom: 29px;
 		text-align: center;
 		font-size: 22px;
 		line-height: 1.2;
@@ -1144,33 +1179,46 @@
 		letter-spacing: 5px;
 		color: #78684a;
 	}
-	.list{
+	.list-columns{
 		overflow: hidden;
-		li{
+		ul{
 			width: 42%;
-			display: inline-block;
-			vertical-align: top;
-			margin: 0 -4px 6px 0;
-			@include box-sizing;
-			padding-left: 22px;
-			position: relative;
+			float: right;
 			letter-spacing: 5px;
+			overflow: hidden;
 			&:nth-child(odd){
-				padding-right: 20px;
+				float: left;
 				width: 58%;
 			}
-			&:after{
-				content: '';
-				position: absolute;
-				top: 50%;
-				left: 0;
-				width: 16px;
-				height: 16px;
-				margin-top: -8px;
-				background: #706145;
-				-webkit-border-radius: 8px;
-				-moz-border-radius: 8px;
-				border-radius: 8px;
+			&.wide{
+				width: 100% !important;
+				float: none !important;
+			}
+			li{
+				position: relative;
+				padding-left: 22px;
+				font-size: 18px;
+				line-height: 36px;
+				&:after{
+					content: '';
+					position: absolute;
+					top: 10px;
+					left: 0;
+					width: 16px;
+					height: 16px;
+					background: #706145;
+					-webkit-border-radius: 8px;
+					-moz-border-radius: 8px;
+					border-radius: 8px;
+				}
+			}
+		}
+		&.info{
+			ul{
+				width: 58%;
+				&:nth-child(odd){
+					width: 40%;
+				}
 			}
 		}
 	}
@@ -1180,65 +1228,80 @@
 			font-size: 20px;
 			letter-spacing: 3px;
 		}
-		.list{
-			li{
+		.list-columns{
+			ul{
 				width: 48%;
-				letter-spacing: 3px;
 				&:nth-child(odd){
-					padding-right: 15px;
-					width: 52%;
+					width: 51%;
+				}
+				li{
+					letter-spacing: 3px;
+					font-size: 16px;
+					line-height: 32px;
+					&:after{
+						top: 8px;
+					}
 				}
 			}
 		}
 	}
 	@media only screen and (max-width: 736px) {
 		margin-bottom: 40px;
+		&.box2{
+			margin-bottom: 50px;
+		}
 		h3{
 			margin-bottom: 20px;
 			font-size: 16px;
 			line-height: 1.4;
 			letter-spacing: 2px;
 		}
-		.list{
-			li{
-				letter-spacing: 2px;
-				padding-left: 20px;
-				font-size: 14px;
-				line-height: 24px;
-				&:after{
-					width: 10px;
-					height: 10px;
-					margin-top: -5px;
-					-webkit-border-radius: 5px;
-					-moz-border-radius: 5px;
-					border-radius: 5px;
+		.list-columns{
+			ul{
+				li{
+					letter-spacing: 2px;
+					padding-left: 20px;
+					font-size: 14px;
+					line-height: 28px;
+					&:after{
+						width: 10px;
+						height: 10px;
+						top: 9px;
+						-webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 5px;
+					}
 				}
 			}
 		}
 	}
 	@media only screen and (max-width: 600px) {
 		margin-bottom: 30px;
+		&.box2{
+			margin-bottom: 40px;
+		}
 		h3{
 			margin-bottom: 20px;
 			font-size: 15px;
 			letter-spacing: 1px;
 		}
-		.list{
-			li{
-				padding-right: 0 !important;
+		.list-columns{
+			ul {
 				width: 100% !important;
-				letter-spacing: 1px;
-				margin: 0 0 5px !important;
-				padding-left: 16px;
-				font-size: 12px;
-				line-height: 20px;
-				&:after{
-					width: 8px;
-					height: 8px;
-					margin-top: -4px;
-					-webkit-border-radius: 4px;
-					-moz-border-radius: 4px;
-					border-radius: 4px;
+				float: none;
+				li {
+					letter-spacing: 1px;
+					padding-left: 16px;
+					font-size: 12px;
+					line-height: 22px;
+					&:after {
+						width: 8px;
+						height: 8px;
+						top: 7px;
+						-webkit-border-radius: 4px;
+						-moz-border-radius: 4px;
+						border-radius: 4px;
+					}
 				}
 			}
 		}
@@ -1459,4 +1522,114 @@ table.table{
 		}
 	}
 }
+/* flow block */
+.flow-block{
+	margin: 0 auto 160px;
+	.holder{
+		h2.heading{
+			margin-bottom: 53px;
+		}
+		.flow-holder{
+			margin: 0 auto;
+			max-width: 996px;
+			background: url('../images/bg-dots-vert.png') repeat-y 98px 0;
+			.box{
+				margin-bottom: 45px;
+				overflow: hidden;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				&.info-last{
+					margin-bottom: 10px;
+				}
+				.date{
+					float: left;
+					margin-right: 67px;
+					width: 200px;
+					background: #b7f5ce;
+					font-size: 18px;
+					line-height: 45px;
+					text-align: center;
+					-webkit-border-radius: 22px;
+					-moz-border-radius: 22px;
+					border-radius: 22px;
+					letter-spacing: 7px;
+				}
+				.hold{
+					overflow: hidden;
+					padding-top: 7px;
+					.row{
+						margin-bottom: 36px;
+						overflow: hidden;
+						.ava{
+							width: 151px;
+							float: left;
+							h3{
+								font-size: 16px;
+								line-height: 30px;
+								font-weight: normal;
+								margin: 0 0 3px 5px;
+							}
+							img{
+								vertical-align: top;
+							}
+						}
+						.info{
+							overflow: hidden;
+							ul.list{
+								li{
+									padding-left: 14px;
+									position: relative;
+									&:after{
+										content: '・';
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 14px;
+										height: 30px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* about meals block */
+.about-meals {
+	margin-bottom: 109px;
+	overflow: hidden;
+	.holder{
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
