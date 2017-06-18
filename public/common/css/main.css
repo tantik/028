@@ -1207,3 +1207,15 @@ input, select {
               border-radius: 10px; }
           .director-block .holder .text-box .box p {
             margin-bottom: 20px; } }
+
+/* anchor links */
+.anchor-links {
+  margin-bottom: 114px;
+  -display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: space-between li;
+      -ms-flex-pack: space-between li;
+          justify-content: space-between li;
+    justify-content-width: 14%; }
