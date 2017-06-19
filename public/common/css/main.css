@@ -1284,12 +1284,22 @@ input, select {
     .anchor-links {
       margin-bottom: 80px; }
       .anchor-links .holder .links li a {
-        font-size: 15px; } }
+        font-size: 15px; }
+      .anchor-links.centered .holder .links {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-left: -10px;
+        margin-right: -10px; }
+        .anchor-links.centered .holder .links li {
+          padding: 0 10px;
+          width: 15.5%; } }
   @media only screen and (max-width: 736px) {
     .anchor-links {
       margin-bottom: 50px; }
       .anchor-links .holder .links {
-        margin-left: -10px;
+        margin-left: -5px;
+        margin-right: -5px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
@@ -1304,14 +1314,22 @@ input, select {
             font-size: 14px;
             line-height: 1.1; }
             .anchor-links .holder .links li a span {
-              height: 50px; } }
+              height: 50px; }
+      .anchor-links.centered .holder .links {
+        margin-left: -5px;
+        margin-right: -5px; }
+        .anchor-links.centered .holder .links li {
+          padding: 0 5px 10px;
+          width: 25%; } }
   @media only screen and (max-width: 480px) {
     .anchor-links {
       margin-bottom: 40px; }
       .anchor-links .holder .links li {
         width: 33.33%; }
         .anchor-links .holder .links li a {
-          font-size: 13px; } }
+          font-size: 13px; }
+      .anchor-links.centered .holder .links li {
+        width: 33.33%; } }
 
 /* massage info */
 .massage-info {
@@ -1321,6 +1339,8 @@ input, select {
     margin-bottom: 75px; }
   .massage-info.box3 {
     margin-bottom: 108px; }
+  .massage-info.box4 {
+    margin-bottom: 33px; }
   .massage-info .holder .heading {
     margin-bottom: 47px; }
   .massage-info .holder .image-text {
@@ -1347,6 +1367,8 @@ input, select {
         margin-bottom: 60px; }
       .massage-info.box3 {
         margin-bottom: 80px; }
+      .massage-info.box4 {
+        margin-bottom: 25px; }
       .massage-info p {
         margin-bottom: 24px; }
       .massage-info .holder .image-text .image {
@@ -1366,10 +1388,14 @@ input, select {
         margin-bottom: 40px; }
       .massage-info.box3 {
         margin-bottom: 50px; }
+      .massage-info.box4 {
+        margin-bottom: 20px; }
       .massage-info p {
         margin-bottom: 20px; }
       .massage-info .holder .heading {
         margin-bottom: 25px; }
+      .massage-info .holder .image-text.inner {
+        margin-bottom: 0; }
       .massage-info .holder .image-text .image {
         margin: 0 0 20px;
         float: none;
@@ -1438,6 +1464,8 @@ input, select {
   overflow: hidden; }
   .troubles-box.box2 {
     margin-bottom: 60px; }
+  .troubles-box.box3 {
+    margin-bottom: 60px; }
   .troubles-box h3 {
     margin-bottom: 29px;
     text-align: center;
@@ -1498,6 +1526,8 @@ input, select {
       margin-bottom: 40px; }
       .troubles-box.box2 {
         margin-bottom: 50px; }
+      .troubles-box.box3 {
+        margin-bottom: 40px; }
       .troubles-box h3 {
         margin-bottom: 20px;
         font-size: 16px;
@@ -1518,6 +1548,8 @@ input, select {
       margin-bottom: 30px; }
       .troubles-box.box2 {
         margin-bottom: 40px; }
+      .troubles-box.box3 {
+        margin-bottom: 10px; }
       .troubles-box h3 {
         margin-bottom: 20px;
         font-size: 15px;
@@ -1560,13 +1592,21 @@ input, select {
       overflow: hidden; }
       .info-box .image-text .text-box p {
         margin-bottom: 30px; }
+  .info-box .text-holder {
+    padding-top: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+    overflow: hidden; }
   @media only screen and (max-width: 1000px) {
     .info-box {
       margin-bottom: 90px; }
       .info-box h2.heading {
         margin-bottom: 40px; }
       .info-box .image-text .image {
-        margin-left: 4%; } }
+        margin-left: 4%; }
+      .info-box .text-holder {
+        padding-top: 5px;
+        margin-bottom: 0; } }
   @media only screen and (max-width: 736px) {
     .info-box {
       margin-bottom: 40px; }
@@ -1585,6 +1625,13 @@ input, select {
         font-size: 12px;
         line-height: 20px; }
         .info-box .image-text .text-box p {
+          margin-bottom: 20px; }
+      .info-box .text-holder {
+        padding-top: 0;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 20px; }
+        .info-box .text-holder p {
           margin-bottom: 20px; } }
 
 /* material box */
@@ -1614,6 +1661,12 @@ input, select {
       border-radius: 5px;
       background: #aea492;
       overflow: hidden; }
+  .material-box .holder .text {
+    margin-bottom: 10px;
+    overflow: hidden;
+    letter-spacing: 3px; }
+    .material-box .holder .text p {
+      margin-bottom: 30px; }
   .material-box table.table {
     margin-bottom: 76px; }
     .material-box table.table tr th {
@@ -1622,9 +1675,25 @@ input, select {
       width: 46.8%;
       text-align: left;
       padding-left: 52px; }
+    .material-box table.table.postpartum {
+      margin-bottom: 40px; }
+      .material-box table.table.postpartum tr th,
+      .material-box table.table.postpartum tr td {
+        padding-top: 24px;
+        padding-bottom: 24px; }
+      .material-box table.table.postpartum tr th {
+        width: 19.5%; }
+      .material-box table.table.postpartum tr td:nth-child(2) {
+        width: 14.2%; }
+      .material-box table.table.postpartum tr td:nth-child(3) {
+        width: 30%; }
+      .material-box table.table.postpartum tr td:last-child {
+        padding-left: 27px; }
   @media only screen and (max-width: 1000px) {
     .material-box {
       margin-bottom: 80px; }
+      .material-box .holder .text p {
+        margin-bottom: 20px; }
       .material-box .holder h2.heading {
         margin-bottom: 40px; }
       .material-box .holder h3 {
@@ -1633,10 +1702,21 @@ input, select {
       .material-box table.table {
         margin-bottom: 60px; }
         .material-box table.table tr td:last-child {
-          padding-left: 30px; } }
+          padding-left: 30px; }
+      .material-box table.table.postpartum {
+        margin-bottom: 30px; }
+        .material-box table.table.postpartum tr td:last-child {
+          padding-left: 20px; } }
   @media only screen and (max-width: 736px) {
     .material-box {
       margin-bottom: 30px; }
+      .material-box .holder .text {
+        letter-spacing: 1px;
+        margin-bottom: 0; }
+        .material-box .holder .text p {
+          font-size: 12px;
+          line-height: 20px;
+          margin-bottom: 20px; }
       .material-box .holder h2.heading {
         margin-bottom: 30px; }
       .material-box .holder h3 {
@@ -1652,6 +1732,10 @@ input, select {
       .material-box .holder table.table {
         margin-bottom: 35px; }
         .material-box .holder table.table tr td:last-child {
+          padding-left: 5px; }
+      .material-box .holder table.table.postpartum {
+        margin-bottom: 15px; }
+        .material-box .holder table.table.postpartum tr td:last-child {
           padding-left: 5px; } }
 
 table.table {
@@ -1741,8 +1825,161 @@ table.table {
                 left: 0;
                 width: 14px;
                 height: 30px; }
+  @media only screen and (max-width: 1000px) {
+    .flow-block {
+      margin-bottom: 120px; }
+      .flow-block .holder h2.heading {
+        margin-bottom: 47px; }
+      .flow-block .holder .flow-holder {
+        background-position: 78px 0; }
+        .flow-block .holder .flow-holder .box .date {
+          width: 160px;
+          letter-spacing: 3px;
+          margin-right: 50px; }
+        .flow-block .holder .flow-holder .box .hold .row .ava {
+          width: 140px; } }
+  @media only screen and (max-width: 736px) {
+    .flow-block {
+      margin-bottom: 70px; }
+      .flow-block .holder h2.heading {
+        margin-bottom: 25px; }
+      .flow-block .holder .flow-holder {
+        background-position: 38px 0; }
+        .flow-block .holder .flow-holder .box {
+          margin-bottom: 15px; }
+          .flow-block .holder .flow-holder .box.info-last {
+            margin-bottom: 0; }
+          .flow-block .holder .flow-holder .box .date {
+            width: 80px;
+            letter-spacing: 1px;
+            font-size: 13px;
+            line-height: 22px;
+            border-radius: 11px;
+            margin-right: 20px; }
+          .flow-block .holder .flow-holder .box .hold {
+            padding-top: 0; }
+            .flow-block .holder .flow-holder .box .hold .row {
+              margin-bottom: 20px; }
+              .flow-block .holder .flow-holder .box .hold .row .ava {
+                width: 60px; }
+                .flow-block .holder .flow-holder .box .hold .row .ava h3 {
+                  margin: 0 0 2px;
+                  font-size: 12px;
+                  line-height: 16px; }
+                .flow-block .holder .flow-holder .box .hold .row .ava img {
+                  display: block;
+                  width: 39px; }
+              .flow-block .holder .flow-holder .box .hold .row .info {
+                font-size: 12px;
+                line-height: 20px; } }
 
 /* about meals block */
 .about-meals {
   margin-bottom: 109px;
   overflow: hidden; }
+  .about-meals .holder .frame {
+    background: #fff1ef;
+    border-radius: 12px;
+    padding: 34px 72px 46px;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+    .about-meals .holder .frame h2 {
+      text-align: center;
+      margin-bottom: 17px;
+      font-size: 22px;
+      line-height: 1.4;
+      font-weight: normal;
+      color: #78684a;
+      letter-spacing: 3px; }
+    .about-meals .holder .frame p {
+      text-align: center;
+      margin-bottom: 17px;
+      letter-spacing: 3px; }
+    .about-meals .holder .frame ul.images {
+      -display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .about-meals .holder .frame ul.images li {
+        width: 29.5%; }
+        .about-meals .holder .frame ul.images li a {
+          display: block; }
+          .about-meals .holder .frame ul.images li a img {
+            display: block;
+            width: 100%; }
+  @media only screen and (max-width: 1000px) {
+    .about-meals {
+      margin-bottom: 80px; }
+      .about-meals .holder .frame {
+        padding: 34px; } }
+  @media only screen and (max-width: 736px) {
+    .about-meals {
+      margin-bottom: 60px; }
+      .about-meals .holder .frame {
+        padding: 15px; }
+        .about-meals .holder .frame h2 {
+          font-size: 16px;
+          letter-spacing: 1px; }
+        .about-meals .holder .frame p {
+          font-size: 12px;
+          line-height: 20px;
+          margin-bottom: 10px;
+          letter-spacing: 1px; }
+        .about-meals .holder .frame ul.images li {
+          width: 31%; } }
+
+/*  */
+/* popups */
+.fader {
+  position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(119, 119, 119, 0.7);
+  opacity: 0;
+  z-index: 980;
+  transition: opacity 0.5s ease; }
+  .fader.visible {
+    left: 0;
+    opacity: 1; }
+
+.popup {
+  left: -100% !important;
+  position: absolute;
+  top: 50%;
+  z-index: 985;
+  width: 94vw;
+  max-width: 600px;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s ease;
+  background: #fff; }
+  .popup .hold {
+    padding: 10px;
+    overflow: hidden; }
+    .popup .hold img {
+      display: block;
+      width: 100%; }
+  .popup .popup-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: url("../images/btn-close-popup.png") no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 0.5s ease; }
+    .popup .popup-close:hover {
+      opacity: 0.5; }
+  .popup.visible {
+    left: 50% !important;
+    opacity: 1; }
+  @media only screen and (max-width: 736px) {
+    .popup {
+      width: 92vw; } }
