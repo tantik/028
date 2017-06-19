@@ -2,53 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30cdd98c-22a6-4e54-9258-5d87f5492b69" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/css/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/css/picedit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/css/validationEngine.jquery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/images/bg-promo_tmp9433" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/images/img-center_tmp15989" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/images/img-experiences-box_tmp19317" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/images/img-mother-sp_tmp29356" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/images/img-mother_tmp24682" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery-1.12.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery.autoKana.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery.jpostal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery.validationEngine-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/jquery.validationEngine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/js/mail_send.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/datepicker-ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/external/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-icons_222222_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-icons_228ef1_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-icons_ef8c08_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-icons_ffd27a_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/images/ui-icons_ffffff_256x240.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/jquery-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/jquery-ui.structure.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/common/plugin/jquery-ui-1.11.4.custom/jquery-ui.theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/construction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/contact.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/contact_send.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/director.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/information.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/construction.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/director.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/information.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/service.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/construction/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/construction/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/director/index.html" afterPath="$PROJECT_DIR$/public/director/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/information/index.html" afterPath="$PROJECT_DIR$/public/information/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/service/index.html" afterPath="$PROJECT_DIR$/public/service/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/director/index.html" afterPath="$PROJECT_DIR$/src/director/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/information/index.html" afterPath="$PROJECT_DIR$/src/information/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/service/index.html" afterPath="$PROJECT_DIR$/src/service/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,126 +26,60 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4348972">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="2350" column="9" lean-forward="false" selection-start-line="2350" selection-start-column="9" selection-end-line="2350" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/layout/_footer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5412">
-                  <caret line="246" column="1" lean-forward="false" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/layout/_header.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7150">
-                  <caret line="325" column="1" lean-forward="false" selection-start-line="325" selection-start-column="1" selection-end-line="325" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1452">
-                  <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/javascripts/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1518">
-                  <caret line="69" column="33" lean-forward="false" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/utils/_mixins.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/sass/utils/_variables.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/construction/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="503" column="29" lean-forward="true" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="29" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/director/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="220" column="26" lean-forward="true" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/information/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/service/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="375" column="84" lean-forward="true" selection-start-line="375" selection-start-column="84" selection-end-line="375" selection-end-column="84" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="770">
+              <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+              <folding>
+                <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/facilities/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/director/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/information/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="946">
+              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/service/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -232,7 +130,6 @@
         <option value="$PROJECT_DIR$/public/contact.php" />
         <option value="$PROJECT_DIR$/src/sass/utils/_variables.scss" />
         <option value="$PROJECT_DIR$/src/sass/base/_reset.scss" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/director.html" />
         <option value="$PROJECT_DIR$/src/sass/layout/_header.scss" />
         <option value="$PROJECT_DIR$/src/service2.html" />
@@ -243,9 +140,11 @@
         <option value="$PROJECT_DIR$/public/construction.html" />
         <option value="$PROJECT_DIR$/src/sass/main.scss" />
         <option value="$PROJECT_DIR$/src/construction/index.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/director/index.html" />
         <option value="$PROJECT_DIR$/src/information/index.html" />
         <option value="$PROJECT_DIR$/src/service/index.html" />
+        <option value="$PROJECT_DIR$/src/facilities/index.html" />
       </list>
     </option>
   </component>
@@ -454,12 +353,12 @@
       <workItem from="1497794566071" duration="1474000" />
       <workItem from="1497803859476" duration="15412000" />
       <workItem from="1497852094198" duration="19450000" />
-      <workItem from="1497871830724" duration="1161000" />
+      <workItem from="1497871830724" duration="3966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229477000" />
+    <option name="totallyTimeSpent" value="232282000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -504,14 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/layout/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7282">
-          <caret line="331" column="48" lean-forward="false" selection-start-line="331" selection-start-column="48" selection-end-line="331" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/base/_reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
@@ -757,16 +648,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/construction.html" />
     <entry file="file://$PROJECT_DIR$/src/information.html" />
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="170" column="28" lean-forward="false" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -775,34 +656,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/information/index.html">
+    <entry file="file://$PROJECT_DIR$/src/construction/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+        <state relative-caret-position="594">
+          <caret line="57" column="60" lean-forward="true" selection-start-line="57" selection-start-column="60" selection-end-line="57" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/facilities/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/director/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="220" column="26" lean-forward="true" selection-start-line="220" selection-start-column="26" selection-end-line="220" selection-end-column="26" />
+        <state relative-caret-position="946">
+          <caret line="43" column="48" lean-forward="false" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/construction/index.html">
+    <entry file="file://$PROJECT_DIR$/src/information/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="503" column="29" lean-forward="true" selection-start-line="503" selection-start-column="29" selection-end-line="503" selection-end-column="29" />
+        <state relative-caret-position="946">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="375" column="84" lean-forward="true" selection-start-line="375" selection-start-column="84" selection-end-line="375" selection-end-column="84" />
+        <state relative-caret-position="484">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
