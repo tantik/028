@@ -7,7 +7,23 @@ function initPage() {
 	mobileMenu();
 	scrollTo()
 	initPopup();
+	OnScroll();
 }
+
+if(window.location.hash){
+	window.hash = window.location.hash.substr(1);
+	window.location.hash = '';
+}
+function OnScroll() {
+	if (window.hash) {
+		var minus = 0;
+		var scrollPos = $('#'+window.hash).offset().top ;
+		$("html, body").animate({ scrollTop: scrollPos - minus }, 1000);
+	}
+};
+
+
+
 
 
 function mobileMenu(){
@@ -21,6 +37,13 @@ function mobileMenu(){
 
 function scrollTo() {
 	$('.anchor-links a').click( function(){
+		var scroll_el = $(this).attr('href');
+		if ($(scroll_el).length != 0) {
+			$('html, body').animate({ scrollTop: $(scroll_el).offset().top - 10 }, 500);
+		}
+		return false;
+	});
+	$('a.slide-link').click( function(){
 		var scroll_el = $(this).attr('href');
 		if ($(scroll_el).length != 0) {
 			$('html, body').animate({ scrollTop: $(scroll_el).offset().top - 10 }, 500);
