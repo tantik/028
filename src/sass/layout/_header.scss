@@ -154,7 +154,7 @@
 			background-size: 161px 49px;
 		}
 		.mobile-opener{
-			position: absolute;
+			position: fixed;
 			z-index: 900;
 			top: 13px;
 			right: 13px;
@@ -173,13 +173,15 @@
 			}
 		}
 		.nav-frame {
-			position: absolute;
+			position: fixed;
 			z-index: 750;
 			top: 0;
 			right: -100%;
 			width: 100%;
+			bottom: 0;
 			background: #f8dddd;
 			padding: 55px 24px 70px;
+			overflow-y: auto;
 			@include box-sizing;
 			@include fade(right);
 			.left-nav,
@@ -315,6 +317,11 @@
 				line-height: 17px;
 			}
 		}
+	}
+}
+@media only screen and (max-width: 736px) {
+	.nav-visible{
+		overflow: hidden;
 	}
 }
 .nav-visible #header{

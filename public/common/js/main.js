@@ -8,6 +8,7 @@ function initPage() {
 	scrollTo()
 	initPopup();
 	OnScroll();
+	ScrollToForm();
 }
 
 if(window.location.hash){
@@ -23,8 +24,12 @@ function OnScroll() {
 };
 
 
-
-
+function ScrollToForm (){
+	$('a.scroll-to-form').click(function (e) {
+		$('body').removeClass('nav-visible');
+		$('a.mobile-opener').removeClass('visible');
+	});
+}
 
 function mobileMenu(){
 	$('a.mobile-opener').click(function (e) {

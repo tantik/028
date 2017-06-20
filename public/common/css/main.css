@@ -197,7 +197,7 @@ input, select {
         background: url("../images/logo-sp.png") no-repeat;
         background-size: 161px 49px; }
       #header .mobile-opener {
-        position: absolute;
+        position: fixed;
         z-index: 900;
         top: 13px;
         right: 13px;
@@ -212,13 +212,15 @@ input, select {
           background: url("../images/icon-menu-on.png") no-repeat;
           background-size: 29px 29px; }
       #header .nav-frame {
-        position: absolute;
+        position: fixed;
         z-index: 750;
         top: 0;
         right: -100%;
         width: 100%;
+        bottom: 0;
         background: #f8dddd;
         padding: 55px 24px 70px;
+        overflow-y: auto;
         -ms-box-sizing: border-box;
         box-sizing: border-box;
         transition: right 0.5s ease; }
@@ -323,6 +325,10 @@ input, select {
         margin: 0 0 0 10px;
         font-size: 10px;
         line-height: 17px; } }
+
+@media only screen and (max-width: 736px) {
+  .nav-visible {
+    overflow: hidden; } }
 
 .nav-visible #header {
   position: relative;
@@ -709,8 +715,7 @@ input, select {
 .right-fixed-links {
   position: fixed;
   right: 0;
-  top: 50%;
-  margin-top: -239px;
+  bottom: 30px;
   z-index: 50; }
   .right-fixed-links a {
     display: block;
@@ -2386,3 +2391,20 @@ table.table {
         font-size: 12px;
         line-height: 1.5;
         margin-bottom: 10px; } }
+
+#post_form_success {
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+  background: #f9f4ed;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  display: none;
+  border-radius: 5px; }
+  @media only screen and (max-width: 736px) {
+    #post_form_success {
+      margin: 0 10px;
+      font-size: 15px;
+      line-height: 22px; } }

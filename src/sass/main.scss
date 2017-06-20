@@ -224,8 +224,7 @@
 .right-fixed-links{
 	position: fixed;
 	right: 0;
-	top: 50%;
-	margin-top: -239px;
+	bottom: 30px;
 	z-index: 50;
 	a{
 		display: block;
@@ -2459,5 +2458,24 @@ table.table{
 				margin-bottom: 10px;
 			}
 		}
+	}
+}
+#post_form_success {
+	text-align: center;
+	padding: 10px;
+	overflow: hidden;
+	background: #f9f4ed;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #000;
+	display: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	@media only screen and (max-width: 736px) {
+		margin: 0 10px;
+		font-size: 15px;
+		line-height: 22px;
 	}
 }

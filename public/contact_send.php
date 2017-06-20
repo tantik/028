@@ -8,11 +8,11 @@ require_once "./inc/db.php";
 if ($_POST['upflg'] == 1) {
 
 
-// POSTデータのSQLの為のエスケープ処理
-foreach ( (array)$_POST as $key => $val ) {
-	if (!is_array($val)) $_POST[$key] = htmlentities(pg_escape_string($val), ENT_QUOTES, mb_internal_encoding());
-}
-
+	// POSTデータのSQLの為のエスケープ処理
+	/*foreach ( (array)$_POST as $key => $val ) {
+		if (!is_array($val)) $_POST[$key] = htmlentities(pg_escape_string($val), ENT_QUOTES, mb_internal_encoding());
+	}
+*/
 
 	//チェックボックス
 	$item = "";
@@ -20,7 +20,6 @@ foreach ( (array)$_POST as $key => $val ) {
 	foreach ( (array)$_POST['item'] as $key => $val ) {
 		$item .= $val."  ";
 	}
-
 
 	// ホームページ運営者に返信するメール
 	mb_language("Japanese");

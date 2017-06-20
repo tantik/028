@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta name = "format-detection" content = "telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Oketani Maternity hospital</title>
+	<meta name="Description" content="京都の助産院は桶谷助産院へ。自宅出産、ベビーマッサージ、乳房マッサージ、妊婦健診、育 児相談までなんでもご相談ください。">
+	<meta name="keywords" content="自宅出産,ベビーマッサージ,乳房マッサージ,妊婦健診,育児相談,京都 助産院">
+	<title>京都 助産院は桶谷助産院へ|自宅出産|ベビーマッサージ|乳房マッサージ|妊婦健診|育児相談</title>
 	<link rel="stylesheet" type="text/css" href="../common/css/main.min.css">
 </head>
 <body>
@@ -53,7 +55,7 @@
 									</a>
 								</li>
 								<li>
-									<a class="slide-link" href="#anchor4">
+									<a class="slide-link scroll-to-form" href="#anchor4">
 										<strong>お問合せ</strong>
 										<span>Contact</span>
 									</a>
@@ -61,7 +63,7 @@
 							</ul>
 						</nav>
 						<p class="phone-link"><a href="tel:0759337883"><span>075-933-7883</span></a></p>
-						<p class="sp web-link"><a href="#">WEBお問合せ</a></p>
+						<p class="sp web-link"><a class="slide-link scroll-to-form" href="#anchor4">WEBお問合せ</a></p>
 						<div class="schedule-box sp">
 							<div class="time-row">
 								<p><strong class="ttl">午前</strong> 10:00〜12:00</p>
@@ -336,37 +338,39 @@
 					<h2 class="heading"><span>お問合せ</span></h2>
 					<p class="ttl">内容を確認させて頂き、後日改めてご返信させて頂きます。</p>
 					<div class="form">
-						<form action="#">
+						<form action="#" id="facilities_form">
+							<input type="hidden" name="upflg" value="1">
 							<fieldset>
 								<div class="form-row">
 									<label for="name">お名前<span class="req">必須</span></label>
 									<div class="hold">
-										<input id="name" class="input-text" tabindex="1" type="text" placeholder="田中　花子" value="" />
+										<input required id="name" class="input-text" name="name" tabindex="1" type="text" placeholder="田中　花子" value="" />
 									</div>
 								</div>
 								<div class="form-row">
 									<label for="email">メールアドレス<span class="req">必須</span></label>
 									<div class="hold">
-										<input id="email" name="Email" class="input-text" tabindex="2" type="email" placeholder="abc@abcd.co.jp" />
+										<input required id="email" class="input-text" name="mail" tabindex="2" type="email" placeholder="abc@abcd.co.jp" />
 									</div>
 								</div>
 								<div class="form-row">
 									<label for="tel">電話番号</label>
 									<div class="hold">
-										<input id="tel" class="input-text" tabindex="3" type="tel" placeholder="090-1111-1111" />
+										<input id="tel" class="input-text" name="tel" tabindex="3" type="tel" placeholder="090-1111-1111" />
 									</div>
 								</div>
 								<div class="form-row">
 									<label for="textarea">お問合せ内容<span class="req">必須</span></label>
 									<div class="hold">
-										<textarea  accesskey="t" id="textarea" tabindex="4" cols="30" rows="10" placeholder="(例) 助産院で出産したい"></textarea>
+										<textarea required accesskey="t" id="textarea" name="msg" tabindex="4" cols="30" rows="10" placeholder="(例) 助産院で出産したい"></textarea>
 									</div>
 								</div>
 								<div class="button-row">
-									<input type="submit" value="送信する" />
+									<input type="submit" name="send" value="送信する" />
 								</div>
 							</fieldset>
 						</form>
+						<div id="post_form_success">ありがとうございます。 <br>お問合せが送信されました。</div>
 					</div>
 				</div>
 			</section>
@@ -497,6 +501,27 @@
 		</div>
 	</div>
 	<noscript>Detected missing Javascript support. Certain website features will not operate correctly with Javascript disabled.</noscript>
+	<script>
+		document.getElementById('facilities_form').addEventListener('submit', function(evt){
+			evt.preventDefault();
+			var http = new XMLHttpRequest(), f = this, formData;
+			evt.preventDefault();
+			http.open("POST", "/contact_send.php", true);
+			formData = new FormData(document.forms.facilities_form);
+			http.send(formData);
+			http.onreadystatechange = function() {
+				if (http.readyState == 4 && http.status == 200) {
+					$('#facilities_form').hide('slow');
+					$('#post_form_success').show();
+					/*f.msg.removeAttribute('value');*/
+					f.msg.value='';
+				}
+			}
+			http.onerror = function() {
+				alert('予約フォームが送信されました ,申し訳ございませんが、予約フォームが正しく送信されませんでした。');
+			}
+		}, false);
+	</script>
 	<script type="text/javascript" src="../common/js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="../common/js/main.min.js"></script>
 </body>
